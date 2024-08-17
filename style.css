@@ -77,9 +77,10 @@ body {
   opacity: 1;
 }
 
+
 #name {
   resize: none;
-  width: 0;
+  width: 100%;
   opacity: 0;
   box-sizing: border-box;
   overflow-y: hidden;
@@ -93,14 +94,13 @@ body {
   line-height: 1.5;
   white-space: pre-wrap;
   word-wrap: break-word;
+  height: 150px; /* adjust the height as needed */
 }
 
 #name.animate {
   animation: fadeIn 2s forwards, typewriter 3s steps(40) 2s forwards;
   opacity: 1;
-  width: 100%;
 }
-
 #subheading {
   font-family: 'Lucida Handwriting', cursive;
   text-align: center;
