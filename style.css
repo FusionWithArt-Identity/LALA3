@@ -64,14 +64,14 @@ body::before {
 }
 
 #Madhu {
-  border-radius: 20px;
+  border-radius: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: auto;
-  margin-top: 20px;
+  margin-top: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: auto;
   height: auto;
   opacity: 0;
   animation: fadeIn 2s forwards;
