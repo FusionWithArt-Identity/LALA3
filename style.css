@@ -173,24 +173,32 @@ body::before {
     height: auto;
     margin: 20px auto;
   }
-  #name, #subheading {
-    font-size: 18px;
-    line-height: 1.5;
-    word-wrap: break-word;
-    white-space: normal;
-    text-align: center;
+ #name, #subheading {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+}
+
+#Madhu {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  #Madhu {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  #login-form {
-    padding: 10px;
-  }
   #Madhu {
+    width: 100%;
+    height: auto;
     margin: 10px auto;
-  }
-  #name, #subheading {
-    font-size: 16px;
-    line-height: 1.5;
   }
 }
