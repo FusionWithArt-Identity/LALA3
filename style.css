@@ -1,5 +1,5 @@
 
- body {
+body {
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
   font-style: italic;
@@ -9,7 +9,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-   background-attachment: fixed;
   margin: 0;
   overflow-x: hidden;
 }
@@ -114,28 +113,42 @@
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+  .container {
+    margin: 0;
+    padding: 20px;
+  }
+  #login-form {
+    width: 80%;
+    padding: 20px;
+  }
+  #Madhu {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 20px auto;
+  }
   #name {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.5;
-  }
-  #subheading {
-    font-size: 18px;
-  }
-  #heading {
-    font-size: 30px;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #protected-content {
+    padding: 30px;
+  }
   #name {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
   }
-  #subheading {
-    font-size: 16px;
-  }
-  #heading {
-    font-size: 26px;
+  #Madhu {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 30px auto;
   }
 }
 
@@ -201,6 +214,6 @@
   max-width: 100%;
   height: auto;
 }
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
- 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+
