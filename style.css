@@ -88,10 +88,10 @@ body::before {
     animation: wobble 0.5s infinite;
     font-family: 'Lucida Handwriting', cursive;
 }
-
 #name {
   resize: none;
-  width: 100%;
+  width: 0;
+  opacity: 0;
   box-sizing: border-box;
   overflow-y: hidden;
   font-family: 'Lucida Handwriting', cursive;
@@ -109,9 +109,26 @@ body::before {
 }
 
 #name.animate {
-  animation: typewriter 3s steps(40) 2s forwards;
+  animation: fadeIn 2s forwards, typewriter 3s steps(40) 2s forwards;
   opacity: 1;
+  width: 100%;
 }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   #name {
