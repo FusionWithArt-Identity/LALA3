@@ -90,14 +90,18 @@ body::before {
 }
 
 #name {
-    border-right: 0.15em solid transparent;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    opacity: 0;
-    font-family: Garamond, sans-serif;
-    font-weight: light;
-    margin-bottom: 30px;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  font-family: Garamond, sans-serif;
+  font-weight: light;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 #name.animate {
