@@ -61,21 +61,7 @@ body::before {
 
 #login-form button[type="button"]:hover {
     background-color: #3e8e41;
-}
 
-#Madhu {
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: auto;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
 
 #heading {
     position: relative;
@@ -90,7 +76,7 @@ body::before {
 }
 #name {
   resize: none;
-  width: 0;
+  width: 100%;
   opacity: 0;
   box-sizing: border-box;
   overflow-y: hidden;
@@ -98,20 +84,35 @@ body::before {
   font-weight: light;
   margin-bottom: 30px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  background-color: #f9f9f9;
+  border: none;
+  background-color: transparent;
   font-size: 18px;
   line-height: 1.5;
   white-space: pre-wrap;
   word-wrap: break-word;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #name.animate {
   animation: fadeIn 2s forwards, typewriter 3s steps(40) 2s forwards;
   opacity: 1;
-  width: 100%;
+}
+
+#Madhu {
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: auto;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+#Madhu.fadeIn {
+  opacity: 1;
 }
 
 @keyframes fadeIn {
