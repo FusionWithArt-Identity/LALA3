@@ -16,7 +16,6 @@ body::before {
 }
 
 .container {
-  margin: -80px auto 0 auto;
   max-width: 1200px;
   padding: 40px 0;
   min-height: 100vh;
@@ -72,7 +71,7 @@ body::before {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: 100vh;
   height: auto;
   opacity: 0;
   animation: fadeIn 2s forwards;
