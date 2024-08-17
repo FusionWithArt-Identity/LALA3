@@ -173,12 +173,21 @@ body::before {
     height: auto;
     margin: 20px auto;
   }
- #name, #subheading {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  white-space: normal;
-  text-align: center;
+#name, #subheading {
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px;
 }
+
+@media only screen and (max-width: 480px) {
+  #name, #subheading {
+    font-size: 16px;
+  }
 
 #Madhu {
   max-width: 100%;
