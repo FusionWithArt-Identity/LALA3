@@ -13,3 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
 });
+window.addEventListener('load', function() {
+  document.getElementById('name').classList.add('animate');
+});
