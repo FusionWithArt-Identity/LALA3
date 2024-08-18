@@ -94,20 +94,25 @@ body::before {
   width: 100%;
   box-sizing: border-box;
   overflow-y: hidden;
-  font-family: Garamond, sans-serif;
+  font-family: 'Lucida Handwriting', cursive;
   font-weight: light;
   margin-bottom: 30px;
-  padding: 10px;
-  border: none;
-  background-color: transparent;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
   font-size: 18px;
   line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #name.animate {
   animation: typewriter 3s steps(40) 2s forwards;
   opacity: 1;
 }
+
 
 
 #subheading {
