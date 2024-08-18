@@ -94,18 +94,16 @@ body::before {
   width: 100%;
   box-sizing: border-box;
   overflow-y: hidden;
-  font-family: 'Lucida Handwriting', cursive;
+  font-family: Garamond, sans-serif;
   font-weight: light;
   margin-bottom: 30px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  background-color: #f9f9f9;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
   font-size: 18px;
   line-height: 1.5;
   white-space: pre-wrap;
   word-wrap: break-word;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #name.animate {
