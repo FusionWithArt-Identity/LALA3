@@ -1,18 +1,16 @@
+
 document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        document.getElementById('heading').innerHTML = 'Hello Madhu';
-        document.getElementById('heading').classList.add('loggedIn');
-        document.getElementById('Madhu').src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXYgGq7a-kWpsDQUbIi1xfeWv7T05oMZrjFjkI7UwNF_BvB-e7uDe5xSoZyWrBwoIAjOxX9nsF8qxobrF9IBHWpa7EDhkANzF-iyUkIIG4DzEOX8X7fx2syENCv6AdZtWwufk8IxUPiJKsduAdGCc_c1xAsFy2xs50o9sNKdZXfbAEcuhMAr6-9ZPqB4Q0/s1600/paris-games-artistic-gymnastics-day-2-6753651837110526-la202124.gif';
-        document.getElementById('login-page').style.display = 'none';
-        document.getElementById('protected-content').style.display = 'block';
-        document.getElementById('name').classList.add('animate');
-        document.getElementById('subheading').style.display = 'block';
-    }, 2000); // 2 seconds
+  setTimeout(function() {
+    document.getElementById('heading').innerHTML = 'Hello Madhu';
+    document.getElementById('heading').classList.add('loggedIn');
+    document.getElementById('Madhu').src = 'https://img.freepik.com/free-photo/2d-graphic-wallpaper-with-colorful-grainy-gradients_23-2151001557.jpg?t=st=1723460589~exp=1723464189~hmac=ae0f6526d69e0640563439b0cbf56f38f247685fde8d4452e81c60b122068af6&w=360';
+    document.getElementById('login-page').style.display = 'none';
+    document.getElementById('protected-content').style.display = 'block';
+    document.getElementById('name').classList.add('animate');
+    document.getElementById('subheading').style.display = 'block';
+  }, 2000); // 2 seconds
 });
 
 document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-});
-window.addEventListener('load', function() {
-  document.getElementById('name').classList.add('animate');
+  event.preventDefault();
 });
