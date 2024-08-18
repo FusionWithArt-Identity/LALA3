@@ -98,24 +98,21 @@ body::before {
   background-color: transparent;
   font-size: 18px;
   line-height: 1.5;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  width: 100%;
-  opacity: 0;
-}
-
-
-#name {
-  opacity: 0;
-  animation: fadeIn 2s forwards;
-  animation-delay: 2s;
   white-space: nowrap;
   overflow: hidden;
+  width: 100%;
+  opacity: 0;
+  animation: typewriter 2s forwards;
+  animation-delay: 2s;
+  border-right: 2px solid black;
 }
 
 @keyframes typewriter {
-  to {
-    opacity: 1;
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 
@@ -155,15 +152,6 @@ body::before {
   }
 }
 
-@keyframes typewriter {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .container {
     padding: 20px 0;
@@ -185,3 +173,4 @@ body::before {
     padding: 10px;
     border-radius: 20px;
   }
+}
