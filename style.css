@@ -109,9 +109,11 @@ body::before {
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-delay: 2s;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-@keyframes fadeIn {
+@keyframes typewriter {
   to {
     opacity: 1;
   }
