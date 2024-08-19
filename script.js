@@ -23,3 +23,7 @@ document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
   return false;
 });
+document.getElementById('name').addEventListener('input', function(e) {
+  e.preventDefault();
+  return false;
+});
