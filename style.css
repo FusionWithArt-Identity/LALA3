@@ -98,7 +98,7 @@ body::before {
 #name {
   resize: none;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lucida Handwriting', cursive;
   font-weight: light;
   border: none;
   background-color: transparent;
@@ -122,7 +122,7 @@ textarea {
   touch-action: pinch-zoom;
     
 .textarea-style {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lucida Handwriting', cursive;
 }
 
 textarea {
