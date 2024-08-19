@@ -102,7 +102,7 @@ body::before {
   font-weight: bold;
   border: none;
   background-color: transparent;
-  font-size: 28px;
+  font-size: 18px;
   line-height: 1.5;
   touch-action: none;
 }
