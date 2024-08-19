@@ -16,3 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('subheading').style.display = 'block';
   }, 2000); // 2 seconds
 });
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+    });
+    document.addEventListener('click', function(e) {
+  e.preventDefault();
+  return false;
+});
