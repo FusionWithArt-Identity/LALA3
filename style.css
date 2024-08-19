@@ -100,7 +100,7 @@ body::before {
   width: 100%;
   font-family: 'Garamond';
   font-weight: light;
-  font-type:   Italics;
+  font-style:   Italic;
   border: none;
   background-color: transparent;
   font-size: 26px;
