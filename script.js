@@ -27,3 +27,10 @@ document.getElementById('name').addEventListener('input', function(e) {
   e.preventDefault();
   return false;
 });
+document.getElementById('name').addEventListener('keydown', function(e) {
+  e.preventDefault();
+  return false;
+});
+document.getElementById('name').addEventListener('focus', function(e) {
+  this.readOnly = true;
+});
