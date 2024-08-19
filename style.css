@@ -118,7 +118,9 @@ opacity: 1;
 .italic-textarea {
   font-style: italic;
 }
-
+textarea {
+  touch-action: auto;
+}
 #subheading {
     font-family: 'Lucida Handwriting', cursive;
     text-align: center;
