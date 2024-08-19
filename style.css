@@ -98,7 +98,7 @@ body::before {
 #name {
   resize: none;
   width: 100%;
-  font-family: 'Garamond';
+  font-family: 'Montserrat', sans-serif;
   font-weight: light;
   border: none;
   background-color: transparent;
