@@ -179,6 +179,7 @@ textarea {
     .container {
         padding: 20px 0;
         border-radius: 20px;
+        font-family: 'Garamond', serif;
     }
     #login-form {
         width: 80%;
