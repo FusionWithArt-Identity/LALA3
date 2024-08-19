@@ -121,6 +121,9 @@ opacity: 1;
 textarea {
   touch-action: pinch-zoom;
 }
+textarea {
+  zoom: 1;
+}
 #subheading {
     font-family: 'Lucida Handwriting', cursive;
     text-align: center;
