@@ -120,10 +120,6 @@ opacity: 1;
 }
 textarea {
   touch-action: pinch-zoom;
-    
-.textarea-style {
-  font-family: 'Lucida Handwriting', cursive;
-}
 
 textarea {
   zoom: 1;
