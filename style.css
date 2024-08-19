@@ -100,7 +100,7 @@ body::before {
   width: 100%;
   font-family: 'Garamond';
   font-weight: light;
-  font-style:   Italic;
+  font-style: italic;
   border: none;
   background-color: transparent;
   font-size: 26px;
@@ -116,7 +116,9 @@ display: none;
 opacity: 1;
 }
 
-
+.italic-textarea {
+  font-style: italic;
+}
 
 #subheading {
     font-family: 'Lucida Handwriting', cursive;
