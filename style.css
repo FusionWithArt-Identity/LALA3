@@ -102,9 +102,8 @@ body::before {
   font-weight: bold;
   border: none;
   background-color: transparent;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.5;
-  touch-action: none;
 }
 
 #name {
