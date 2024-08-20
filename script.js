@@ -33,6 +33,3 @@ document.getElementById('name').addEventListener('keydown', function(e) {
   return false;
 });
 
-document.getElementById('name').addEventListener('focus', function(e) {
-  this.readOnly = true;
-});
