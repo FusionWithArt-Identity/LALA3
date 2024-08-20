@@ -90,16 +90,14 @@ body::before {
 }
 
 #name {
-  resize: none;
-  width: 100%;
-  font-family: 'Garamond', serif;
-  font-weight: light;
-  border: none;
-  background-color: transparent;
-  font-size: 26px;
-  line-height: 1.5;
+  font-size: 16px;
     transform: none;
-  -webkit-transform: none;
+    -webkit-transform: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
 }
 
 #name {
@@ -115,10 +113,8 @@ opacity: 1;
   font-style: italic;
 }
 textarea {
-  touch-action: pinch-zoom;
-}
-textarea {
-  zoom: 1;
+ touch-action: manipulation;
+ zoom: 0.8;
 }
 #subheading {
     font-family: 'Lucida Handwriting', cursive;
