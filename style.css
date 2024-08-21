@@ -182,7 +182,7 @@ border-radius: 40px;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait)  {
     .container {
         padding: 20px 0;
         border-radius: 20px;
@@ -195,17 +195,21 @@ border-radius: 40px;
     #Madhu {
         width: 80%;
         border-radius: 20px;
+    } 
+    #heading {
+    margin-top: 20px;
+
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   #textbox-area {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (orientation: portrait) {
     #login-form {
         padding: 10px;
         border-radius: 20px;
