@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     font-style: italic;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 40px;
     background-image: url("https://img.freepik.com/free-photo/2d-graphic-wallpaper-with-colorful-grainy-gradients_23-2151001557.jpg?t=st=1723460589~exp=1723464189~hmac=ae0f6526d69e0640563439b0cbf56f38f247685fde8d4452e81c60b122068af6&w=360");
     background-size: cover;
     background-position: center;
@@ -21,10 +21,10 @@ body::before {
 }
 
 .container {
-    margin: -40px auto 0 auto;
+    margin: -80px auto 0 auto;
     max-width: 1200px;
     padding: 40px 0;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +84,7 @@ body::before {
 }
 
 #heading {
-    position: relative;
+   margin-top: auto;
     animation: oscillate 2s infinite;
     font-family: Verdana, sans-serif;
     font-weight: light;
