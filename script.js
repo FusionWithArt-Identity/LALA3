@@ -36,12 +36,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000); // Change color every 1 second
   }, 2000); // wait for 2 seconds
 });
-audioController = new Audio();
 
-// Disable right-click and context menu
-audioController.addEventListener('contextmenu', (e) => {
-  e.preventDefault();
+
+const audioController = document.getElementById('audioController');
+
+// Customize play/pause button
+audioController.addEventListener('play', () => {
+  audioController::-webkit-media-controls-play-button.innerHTML = 'Pause';
 });
+
+audioController.addEventListener('pause', () => {
+  audioController::-webkit-media-controls-play-button.innerHTML = 'Play';
+});
+
 
 document.addEventListener('contextmenu', function(event) {
   event.preventDefault();
