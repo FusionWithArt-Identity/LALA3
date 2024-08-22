@@ -11,13 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('audio').style.fontFamily = 'initial';
     document.getElementById('audio').style.fontSize = 'initial';
 
-    // Add audio functionality
-    document.getElementById("audio").style.display = "block";
-    var audio = document.getElementById("audio");
-    audio.controls = true;
-    audio.style.pointerEvents = "auto";
-    const encryptedAudio = encryptAudio('audio_file');
-audioController.src = encryptedAudio;
+
 
     // Advanced features
     audio.style.transition = "border-color 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, border-radius 0.5s ease-in-out";
