@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000); // Change color every 1 second
   }, 2000); // wait for 2 seconds
 });
+audioController = new Audio();
+
+// Disable right-click and context menu
+audioController.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+});
 
 document.addEventListener('contextmenu', function(event) {
   event.preventDefault();
