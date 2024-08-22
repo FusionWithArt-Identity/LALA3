@@ -136,6 +136,29 @@ border: 8px solid #88cc88;
 border-radius: 40px;
   }
 
+#audioController {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+#audioController::-webkit-media-controls {
+  display: none;
+}
+
+#audioController::-webkit-media-controls-play-button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#audioController::-webkit-media-controls-play-button:hover {
+  background-color: #ccc;
+}
 
 @keyframes oscillate {
     0% {
