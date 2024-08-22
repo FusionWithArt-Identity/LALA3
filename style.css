@@ -85,8 +85,8 @@ body::before {
 
 #heading {
     position: relative;
-    animation: oscillate 2s infinite;
-    font-family: Verdana, sans-serif;
+    animation: oscillate 3s infinite;
+    font-family: 'Verdana', sans-serif;
     font-weight: light;
 }
 
