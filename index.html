@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Welcome to ArtiCode Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            font-style: italic;
+            text-align: center;
+            padding-top: 40px;
+            background-image: url("https://img.freepik.com/free-photo/2d-graphic-wallpaper-with-colorful-grainy-gradients_23-2151001557.jpg?t=st=1723460589~exp=1723464189~hmac=ae0f6526d69e0640563439b0cbf56f38f247685fde8d4452e81c60b122068af6&w=360");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body::before {
+            content: none;
+        }
+
+        .container {
+            margin: -80px auto 0 auto;
+            max-width: 1200px;
+            padding: 40px 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* adjust opacity value for desired washout effect */
+            z-index: -1;
+        }
+
+        #login-form {
+            width: 80%;
+            padding: 40px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #login-form input[type="password"] {
+            width: 70%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+        }
+
+        #login-form button[type="button"] {
+            width: 40%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        #login-form button[type="button"]:hover {
+            background-color: #3e8e41;
+        }
+
+        #Madhu {
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: auto;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        #heading {
+            position: relative;
+            animation: oscillate 2s infinite;
+            font-family: Verdana, sans-serif;
+            font-weight: light;
+        }
+
+        #heading.loggedIn {
+            animation: wobble 0.5s infinite;
+            font-family: 'Lucida Handwriting', cursive;
+            margin-top: 40px;
+        }
+
+        #name {
+            resize: none;
+            width: 100%;
+            font-family: 'Garamond', serif;
+            font-weight: light;
+            border: none;
+            background-color: transparent;
+            font-size: 26px;
+            line-height: 1.5;
+        }
+
+        #name {
+            display: none;
+        }
+
+        #name.animate {
+            animation: typewriter 2s steps(40);
+            opacity: 1;
+        }
+
+        .logo {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .logo img {
+            width: 200px; /* adjust the width as needed */
+            height: auto;
+            border-radius: 80%; /* optional */
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* drop shadow effect */
+            image-rendering: crisp-edges; /* or image-rendering: pixelated */
+            user-select: none; /* make non-selectable */
+            pointer-events: none; /* make non-clickable */
+            -webkit-user-drag: none; /* make non-draggable for Chrome and Safari */
+            user-drag: none; /* make non-draggable for Firefox */
+        }
+
+        .italic-textarea {
+            font-style: italic;
+        }
+
+        textarea {
+            touch-action: pinch-zoom;
+        }
+
+        textarea {
+            zoom: 1;
+        }
+
+        #subheading {
+            font-family: 'Lucida Handwriting', cursive;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #audio {
+            font-style: normal;
+            border: 8px solid #88cc88;
+            border-radius: 40px;
+        }
+
+        @keyframes oscillate {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: 10px;
+            }
+            100% {
+                left: 0;
+            }
+        }
+
+        @keyframes wobble {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(-5deg);
+            }
+            50% {
+                transform: rotate(5deg);
+            }
+            75% {
+                transform: rotate(-5deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes typewriter {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 20px 0;
+                border-radius: 20px;
+            }
+            #login-form {
+                width: 80%;
+                padding: 20px;
+                border-radius: 20px;
+            }
+            #Madhu {
+                width: 80%;
+                border-radius: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            #textbox-area {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            #login-form {
+                padding: 10px;
+                border-radius: 20px;
+            }
+            #Madhu {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="background-overlay"></div>
+            <img src="C:\Users\mrida\Desktop\Audio + Logo + Styles + Final\Logo.png" alt="Logo">
+        </div>
+        <h1 id="heading">Fusion of Fashion & Identity</h1>
+        <div id="login-page">
+            <!-- Removed login form -->
+        </div>
+        <div id="protected-content" style="display: none;">
+            <textarea id="name" rows="10" cols="40" class="italic-textarea" style="margin-left:auto; margin-right:auto; text-align:center; pointer-events: none;">Let's Rock This is a long text area Where You Can Write This is a long text area Where You Can Write... This is a long text area Where You Can Write</textarea>
+            <audio id="audio" controls autoplay style="display: block; margin: 20px auto;">
+                <source src="C:\Users\mrida\Desktop\Test\audio-file.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <img id="Madhu" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXYgGq7a-kWpsDQUbIi1xfeWv7T05oMZrjFjkI7UwNF_BvB-e7uDe5xSoZyWrBwoIAjOxX9nsF8qxobrF9IBHWpa7EDhkANzF-iyUkIIG4DzEOX8X7fx2syENCv6AdZtWwufk8IxUPiJKsduAdGCc_c1xAsFy2xs50o9sNKdZXfbAEcuhMAr6-9ZPqB4Q0/s1600/paris-games-artistic-gymnastics-day-2-6753651837110526-la202124.gif" alt="Protected Image" ondragstart="return false;">
+            <h2 id="subheading">Where Fashion Meets Identity!</h2>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('heading').innerHTML = 'Hello Madhu';
+                document.getElementById('heading').classList.add('loggedIn');
+                document.getElementById('Madhu').src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXYgGq7a-kWpsDQUbIi1xfeWv7T05oMZrjFjkI7UwNF_BvB-e7uDe5xSoZyWrBwoIAjOxX9nsF8qxobrF9IBHWpa7EDhkANzF-iyUkIIG4DzEOX8X7fx2syENCv6AdZtWwufk8IxUPiJKsduAdGCc_c1xAsFy2xs50o9sNKdZXfbAEcuhMAr6-9ZPqB4Q0/s1600/paris-games-artistic-gymnastics-day-2-6753651837110526-la202124.gif';
+                document.getElementById('login-page').style.display = 'none';
+                document.getElementById('protected-content').style.display = 'block';
+                document.getElementById('name').style.display = 'block';
+                document.getElementById('name').classList.add('animate');
+                document.getElementById('subheading').style.display = 'block';
+                document.getElementById('audio').style.fontFamily = 'initial';
+                document.getElementById('audio').style.fontSize = 'initial';
+
+                // Add audio functionality
+                document.getElementById("audio").style.display = "block";
+                var audio = document.getElementById("audio");
+                audio.controls = true;
+                audio.style.pointerEvents = "auto";
+
+                // Advanced features
+                audio.style.transition = "border-color 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, border-radius 0.5s ease-in-out";
+                audio.style.borderRadius = "40px";
+                audio.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.2)";
+
+                // Random color changing border
+                setInterval(function() {
+                    var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                    audio.style.borderColor = randomColor;
+                    audio.style.borderStyle = "solid";
+                    audio.style.borderWidth = "4px";
+
+                    // Add a wave effect
+                    audio.style.transform = "translateX(10px)";
+                    setTimeout(function() {
+                        audio.style.transform = "translateX(-10px)";
+                        setTimeout(function() {
+                            audio.style.transform = "translateX(0px)";
+                        }, 200);
+                    }, 200);
+                }, 1000); // Change color every 1 second
+            }, 2000); // wait for 2 seconds
+        });
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        document.getElementById('name').addEventListener('input', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        document.getElementById('name').addEventListener('keydown', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        document.getElementById('name').addEventListener('focus', function(e) {
+            this.readOnly = true;
+        });
+    </script>
+</body>
+</html>
