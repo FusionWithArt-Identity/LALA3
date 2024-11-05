@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Animation</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+            overflow: hidden; /* Ensures no extra scrollbars */
+        }
+
+        #cube-container {
+            position: relative;
+            width: 300px; /* Increased width for larger cube */
+            height: 300px; /* Increased height for larger cube */
+            perspective: 1500px; /* Adjusted perspective for larger size */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cube {
+            width: 150px; /* Increased size of the cube */
+            height: 150px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 8s infinite ease-in-out;
+        }
+
+        .face {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border: 2px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: black;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .front {
+            transform: translateZ(75px);
+            background-image: url('file:///C:/Users/mrida/Desktop/Animation1/Logo.png');
+        }
+
+        .back {
+            transform: rotateY(180deg) translateZ(75px);
+            background-image: url('file:///C:/Users/mrida/Desktop/Animation1/Logo.png');
+        }
+
+        .left {
+            transform: rotateY(-90deg) translateZ(75px);
+            background-image: url('file:///C:/Users/mrida/Desktop/Animation1/Logo.png');
+        }
+
+        .right {
+            transform: rotateY(90deg) translateZ(75px);
+            background-image: url('file:///C:/Users/mrida/Desktop/Animation1/Logo.png');
+        }
+
+        .top {
+            transform: rotateX(90deg) translateZ(75px);
+            background-image: url('file:///C:/Users/mrida/Desktop/Animation1/Logo.png');
+        }
+
+        .bottom {
+            transform: rotateX(-90deg) translateZ(75px);
+            background-image: url('file:///C:/Users/mrida/Desktop/Animation1/Logo.png');
+        }
+
+        @keyframes rotate {
+            0%, 20% { transform: rotateX(0deg) rotateY(0deg); }
+            40% { transform: rotateX(0deg) rotateY(90deg); }
+            60% { transform: rotateX(0deg) rotateY(180deg); }
+            80% { transform: rotateX(0deg) rotateY(270deg); }
+            100% { transform: rotateX(360deg) rotateY(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="cube-container">
+        <div class="cube">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+    </div>
+
+    <script>
+        // Redirect to the main page after 9 seconds
+        setTimeout(function() {
+            window.location.href = "main page.html"; // Replace with the filename of your main page
+        }, 9000);
+    </script>
+</body>
+</html>
