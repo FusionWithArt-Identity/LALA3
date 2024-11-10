@@ -99,37 +99,10 @@
     </div>
 
     <script>
-        // Array of image URLs
-        const images = [
-            'Loader1.jpeg',
-            'Loader2.jpeg',
-            'Loader3.jpeg',
-            'Loader4.jpeg',
-            'Logo.png',
-            'Logo.png'
-        ];
-
-        // Load images and track the loading status
-        let loadedImages = 0;
-
-        images.forEach(src => {
-            const img = new Image();
-            img.src = src;
-            img.onload = () => {
-                loadedImages++;
-                // Redirect only when all images are loaded
-                if (loadedImages === images.length) {
-                    window.location.href = "main page.html"; // Replace with the filename of your main page
-                }
-            };
-            img.onerror = () => {
-                // Handle any loading errors by increasing the count
-                loadedImages++;
-                if (loadedImages === images.length) {
-                    window.location.href = "main page.html";
-                }
-            };
-        });
+        // Redirect to the main page after 9 seconds
+        setTimeout(function() {
+            window.location.href = "main page.html"; // Replace with the filename of your main page
+        }, 9000);
     </script>
 </body>
 </html>
