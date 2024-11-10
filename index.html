@@ -12,6 +12,7 @@
             align-items: center;
             background-color: #f2f2f2;
             overflow: hidden; /* Ensures no extra scrollbars */
+            transition: opacity 1.5s ease; /* Smooth transition for fade-out effect */
         }
 
         #cube-container {
@@ -84,6 +85,11 @@
             80% { transform: rotateX(0deg) rotateY(270deg); }
             100% { transform: rotateX(360deg) rotateY(360deg); }
         }
+
+        /* Fade-out class for smooth transition */
+        .fade-out {
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
@@ -99,10 +105,13 @@
     </div>
 
     <script>
-        // Redirect to the main page after 9 seconds
+        // Apply fade-out effect before redirecting to main page
         setTimeout(function() {
-            window.location.href = "main page.html"; // Replace with the filename of your main page
-        }, 9000);
+            document.body.classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = "main page.html"; // Replace with the filename of your main page
+            }, 1500); // Wait for fade-out animation to complete
+        }, 7500); // Start fade-out slightly before the 9-second mark
     </script>
 </body>
 </html>
