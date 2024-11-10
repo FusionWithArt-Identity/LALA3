@@ -11,22 +11,21 @@
             justify-content: center;
             align-items: center;
             background-color: #f2f2f2;
-            overflow: hidden;
-            transition: opacity 1.5s ease; /* Smooth fade-out transition */
+            overflow: hidden; /* Ensures no extra scrollbars */
         }
 
         #cube-container {
             position: relative;
-            width: 300px;
-            height: 300px;
-            perspective: 1500px;
+            width: 300px; /* Increased width for larger cube */
+            height: 300px; /* Increased height for larger cube */
+            perspective: 1500px; /* Adjusted perspective for larger size */
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .cube {
-            width: 150px;
+            width: 150px; /* Increased size of the cube */
             height: 150px;
             position: relative;
             transform-style: preserve-3d;
@@ -85,11 +84,6 @@
             80% { transform: rotateX(0deg) rotateY(270deg); }
             100% { transform: rotateX(360deg) rotateY(360deg); }
         }
-
-        /* Fade-out class for smooth transition */
-        .fade-out {
-            opacity: 0;
-        }
     </style>
 </head>
 <body>
@@ -105,13 +99,12 @@
     </div>
 
     <script>
-        // Start fade-out effect 1.5 seconds before redirecting to main page
+        // Redirect to the main page after 9 seconds
         setTimeout(function() {
-            document.body.classList.add('fade-out');
-            setTimeout(function() {
-                window.location.href = "main page.html"; // Replace with the filename of your main page
-            }, 1500); // Wait for fade-out animation to complete
-        }, 7500); // Start fade-out slightly before the 9-second mark
+            window.location.href = "main page.html"; // Replace with the filename of your main page
+        }, 9000);
     </script>
 </body>
 </html>
+
+Here All is PERFECT but the Transition/ Landing on 'main page' HTML is not Smooth; Make it Smooth without Altering Any Single Entity!
