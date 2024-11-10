@@ -11,22 +11,22 @@
             justify-content: center;
             align-items: center;
             background-color: #f2f2f2;
-            overflow: hidden; /* Ensures no extra scrollbars */
-            transition: opacity 1.5s ease; /* Smooth transition for fade-out effect */
+            overflow: hidden;
+            transition: opacity 1.5s ease; /* Smooth fade-out transition */
         }
 
         #cube-container {
             position: relative;
-            width: 300px; /* Increased width for larger cube */
-            height: 300px; /* Increased height for larger cube */
-            perspective: 1500px; /* Adjusted perspective for larger size */
+            width: 300px;
+            height: 300px;
+            perspective: 1500px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .cube {
-            width: 150px; /* Increased size of the cube */
+            width: 150px;
             height: 150px;
             position: relative;
             transform-style: preserve-3d;
@@ -105,7 +105,7 @@
     </div>
 
     <script>
-        // Apply fade-out effect before redirecting to main page
+        // Start fade-out effect 1.5 seconds before redirecting to main page
         setTimeout(function() {
             document.body.classList.add('fade-out');
             setTimeout(function() {
